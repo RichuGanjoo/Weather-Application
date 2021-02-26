@@ -1,0 +1,36 @@
+body {
+  background-color: cyan;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  padding: 10px;
+}
+
+.col-2 {
+  text-align: center;
+  padding: 15px;
+}
+
+#city-name {
+  color: rgb(109, 108, 67);
+  padding: 25px 0px 0px 25px;
+}
+
+#current-date-time {
+  color: rgb(109, 108, 67);
+}
+
+h3 {
+  color: darkblue;
+  padding: 25px;
+}
+
+h4 {
+  color: rgb(109, 108, 67);
+  padding: 25px;
+}
+form {
+  padding: 0px 25px;
+}

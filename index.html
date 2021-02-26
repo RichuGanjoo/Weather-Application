@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <title>Weather Application</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>
+            Weather Forecast
+        </h1>
+        
+    </header>
+    <section>
+        <form>
+            <input type="text" id="entered-city-name" placeholder="Enter City Name" />
+        
+            <button type="submit" class="btn btn-dark btn-sm" id="search-city">
+                Search
+            </button>
+            <button type="submit" class="btn btn-dark btn-sm" id="current-city-temp">
+                Current City Temperature
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2 id="city-name">City Name</h2>
+        <h3 id="current-date-time">Date and Time</h3>
+        <div class="row">
+            <div class="col-6">
+                
+                <h3>       
+                    <div id="description">
+                        Description
+                    </div>
+        
+                    <span id="current-temperature">
+                        Current-temperature
+                    </span>
+                </h3>
+            </div>
+            <div class="col-6">
+                <h3>
+                    <div id="humidity">
+                        Humidity: 
+                    </div>
+        
+                    <div id="wind">
+                        Wind: 
+                    </div>
+        
+                </h3>
+    </section>
+    <section>
+        <h4>Weather predictions for the next five days</h4>
+        <div class="row">
+            <div class="col-2">
+                
+                <i class="fas fa-cloud"></i>
+                <br />
+                Fri
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                
+                <i class="fas fa-wind"></i>
+                <br />
+                Sat
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                
+                <i class="fas fa-sun"></i>
+                <br />
+                Sun
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                
+                <i class="fas fa-cloud-sun-rain"></i>
+                <br />
+                Mon
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                
+                <i class="fas fa-cloud"></i>
+                <br />
+                Tue
+                <br />
+                23° 16°
+            </div>
+        </div>
+    </section>
+    <footer>
+        Click here for <a href="" id="github-link">  Source Code
+        </a>
+    </footer>
+    <script src="src/script.js"></script>
+    </div>
+</body>
+</html>
