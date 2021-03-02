@@ -99,3 +99,21 @@ function showTemperature(response) {
   let timeDisplay = document.querySelector("#city-time");
   timeDisplay.innerHTML=time;
 }
+
+//temperature change
+function fahrenheit() {
+let temperature = document.querySelector("#current-temperature");
+
+temperature.innerHTML = `69.62`;
+}
+
+let fahrenheitTemperature = document.querySelector("#fahrenheit-link");
+fahrenheitTemperature.addEventListener("click", fahrenheit);
+
+function celsius() {
+let temperature = document.querySelector("#current-temperature");
+temperature.innerHTML = `20.9`;
+}
+
+let celsiusTemperature = document.querySelector("#celsius-link");
+celsiusTemperature.addEventListener("click", celsius);
