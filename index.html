@@ -14,119 +14,118 @@
 <body>
     <div class="container">
         <div class="weather-app-wrapper">
-        <div class="weather-app">
-    <header>
-        <h1>
-            Weather Forecast
-        </h1>
-        
-    </header>
-    <section>
-        <form>
-            <input type="text" id="entered-city-name" placeholder="Search location..." />
-        
-            <button type="submit" class="btn btn-dark btn-sm" id="search-city">
-                <i class="fas fa-search-plus"></i>
-            </button>
-            <button type="submit" class="btn btn-dark btn-sm" id="current-city-temp">
-                Current City
-            </button>
-        </form>
-    </section>
-    <section>
-        <h2 id="city-name">
-            City Name
-        </h2>
-        <ul>
-        <li id="current-date-time">
-            Date and Time
-        </li>
-        <li id="description">
-            Description
-        </li>
-        </ul>
-        <div class="row">
-
-            <div class="col-6">
-                <i class="fas fa-sun"></i>
-                <span id="current-temperature">
-                    20.9
-                </span>
-                        
-                <span>
-                    <a href="#" id="celsius-link">°C</a>|
-                    <a href="#" id="fahrenheit-link">°F</a>
-                </span>
-            </div>
-
-            <div class="col-6">
-                <ul>
-                    <li id="precipitation">
-                        Precipitation:
-                    </li>
-                    <li id="humidity">
-                        Humidity: 
-                    </li>
-                    <li id="wind">
-                        Wind: 
-                    </li>
-                </ul>
-            </div>
+            <div class="weather-app">
+    
+                <h1>
+                    Weather Forecast
+                </h1>
             
-    <section>
-        <h4>Weather predictions for the next five days</h4>
-        <div class="row">
-            <div class="col-2">
+                <section>
+                <form>
+                    <input type="text" id="entered-city-name" placeholder="Search location..." />
+            
+                    <button type="submit" class="btn btn-dark btn-sm" id="search-city">
+                    <i class="fas fa-search-plus"></i>
+                    </button>
+                    <button type="submit" class="btn btn-dark btn-sm" id="current-city-temp">
+                    Current City
+                    </button>
+                </form>
+                </section>
                 
-                <i class="fas fa-cloud"></i>
-                <br />
-                Fri
-                <br />
-                23° 16°
-            </div>
-            <div class="col-2">
+                <section>
+                    <h2 id="city-name">
+                        City Name
+                    </h2>
+                    <ul>
+                        <li id="current-date-time">
+                            Date and Time
+                        </li>
+                        <li id="description">
+                            Description
+                        </li>
+                    </ul>
+
+                <div class="row">
+                <div class="col-6">
+                    <div class="weather-temperature">
+                    <i class="fas fa-sun"></i>
+                    <strong id="current-temperature">20.9</strong>       
+                    <span class="units">
+                        <a href="#" id="celsius-link">°C</a>|
+                        <a href="#" id="fahrenheit-link">°F</a>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <ul>
+                        <li id="precipitation">
+                            Precipitation:
+                        </li>
+                        <li id="humidity">
+                            Humidity: 
+                        </li>
+                        <li id="wind">
+                            Wind: 
+                        </li>
+                    </ul>
+                </div>
                 
-                <i class="fas fa-wind"></i>
-                <br />
-                Sat
-                <br />
-                23° 16°
+            <section>
+            <h4>Weather predictions for the next five days</h4>
+                <div class="row">
+                    <div class="col-2">
+                        
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                        Fri
+                        <br />
+                        23° 16°
+                    </div>
+                    <div class="col-2">
+                        
+                        <i class="fas fa-wind"></i>
+                        <br />
+                        Sat
+                        <br />
+                        23° 16°
+                    </div>
+                    <div class="col-2">
+                        
+                        <i class="fas fa-sun"></i>
+                        <br />
+                        Sun
+                        <br />
+                        23° 16°
+                    </div>
+                    <div class="col-2">
+                        
+                        <i class="fas fa-cloud-sun-rain"></i>
+                        <br />
+                        Mon
+                        <br />
+                        23° 16°
+                    </div>
+                    <div class="col-2">
+                    
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                            Tue
+                        <br />
+                            23° 16°
+                    </div>
+                </div>
+            </section>
             </div>
-            <div class="col-2">
-                
-                <i class="fas fa-sun"></i>
-                <br />
-                Sun
-                <br />
-                23° 16°
             </div>
-            <div class="col-2">
-                
-                <i class="fas fa-cloud-sun-rain"></i>
-                <br />
-                Mon
-                <br />
-                23° 16°
-            </div>
-            <div class="col-2">
-                
-                <i class="fas fa-cloud"></i>
-                <br />
-                Tue
-                <br />
-                23° 16°
-            </div>
-        </div>
-    </section>
-    </div>
-    </div>
-    <small>
+        <small>
         Click here for <a href="" id="github-link"> Source Code
         </a>
-    </small>
+        </small>
     </div>
-    
-    <script src="src/script.js"></script>
+
+        <script src="src/script.js"></script>
     
 </body>
 </html>

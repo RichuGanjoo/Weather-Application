@@ -63,3 +63,15 @@ li {
   max-width: 650px;
   margin: 0 auto;
 }
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+}
+
+#current-temperature {
+  color: blue;
+  font-size: 55px;
+  font-weight: 400;
+}
