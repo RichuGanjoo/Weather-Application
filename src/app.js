@@ -53,8 +53,6 @@ let days = [
 ];
 let day = days[date.getDay()];
 
-alert(`${day}, ${hours}:${minutes}`);
-
 return `Last updated: ${day}, ${hours}:${minutes}`;
 }
 
