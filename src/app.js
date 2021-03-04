@@ -85,6 +85,10 @@ locationDisplay.innerHTML = location;
 
 let timeElement = document.querySelector("#current-day-time");
 timeElement.innerHTML = formatDate(response.data.dt * 1000);
+
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+iconElement.setAttribute("alt", `response.data.weather[0].description`);
 }
 
 //temperature change
@@ -95,13 +99,13 @@ let temperature = document.querySelector("#current-temperature");
 temperature.innerHTML = `69.62`;
 }
 
-let fahrenheitTemperature = document.querySelector("#fahrenheit-link");
-fahrenheitTemperature.addEventListener("click", fahrenheit);
+//let fahrenheitTemperature = document.querySelector("#fahrenheit-link");
+//fahrenheitTemperature.addEventListener("click", fahrenheit);
 
 function celsius() {
 let temperature = document.querySelector("#current-temperature");
 temperature.innerHTML = `20.9`;
 }
 
-let celsiusTemperature = document.querySelector("#celsius-link");
-celsiusTemperature.addEventListener("click", celsius);
+//let celsiusTemperature = document.querySelector("#celsius-link");
+//celsiusTemperature.addEventListener("click", celsius);
