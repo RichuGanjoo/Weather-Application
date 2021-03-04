@@ -38,9 +38,10 @@ let currentCity = document.querySelector("#current-city-temp");
 currentCity.addEventListener("click", getCurrentPosition);
 
 
-function formatDate(timestamp){
-let now = new Date(timestamp);
-
+function formatDate(timestamp) {
+let date = new Date(timestamp);
+let hours = date.getHours();
+let minutes = date.getMinutes();
 let days = [
 "Sunday",
 "Monday",
@@ -50,20 +51,11 @@ let days = [
 "Friday",
 "Saturday"
 ];
+let day = days[date.getDay()];
 
-let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov","Dec"]
-let month = months[now.getMonth()];
-let year = now.getFullYear();
-let day = days[now.getDay()];
-let date = now.getDate();
-let time = now.getHours();
-let minutes = now.getMinutes();
+alert(`${day}, ${hours}:${minutes}`);
 
-return ` `;
-
-//let dateTime = document.querySelector("#current-date-time");
-//dateTime.innerHTML = ` ${month} ${date}, ${year}. ${day}, ${time}:${minutes}`;
-
+return `Last updated: ${day}, ${hours}:${minutes}`;
 }
 
 //Show Temperature and all description about search city
@@ -93,9 +85,8 @@ let location = response.data.name;
 let locationDisplay = document.querySelector("#city-name");
 locationDisplay.innerHTML = location;
 
-let time = (response.data.dt * 1000);
-let timeDisplay = document.querySelector("#current-date-time");
-timeDisplay.innerHTML = formatData(time);
+let timeElement = document.querySelector("#current-day-time");
+timeElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 //temperature change
