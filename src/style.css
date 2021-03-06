@@ -1,9 +1,10 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(241, 214, 214);
 }
 
 h1 {
-  color: rgb(83, 83, 243);
+  color: rgb(240, 81, 81);
   text-align: center;
 }
 
@@ -36,8 +37,32 @@ li:first-letter {
 }
 
 .col-2 {
-  text-align: center;
+  text-align: left;
   padding: 15px;
+}
+
+.weather-forecast {
+  margin: 10px;
+}
+
+.weather-forecast h3 {
+  color: rgb(109, 108, 67);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: rgb(109, 108, 67);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
 }
 
 #current-date-time,
@@ -47,12 +72,12 @@ li:first-letter {
 }
 
 #entered-city-name {
-  border-color: dodgerBlue;
-  box-shadow: 0 0 8px 0 dodgerBlue;
-  height: 40px;
+  border-color: rgb(211, 103, 130);
+  box-shadow: 0 0 8px 0 rgb(230, 148, 162);
+  height: 30px;
   line-height: 35px;
   padding-right: 10px;
-  width: 60%;
+  width: 100%;
 }
 
 .weather-app {

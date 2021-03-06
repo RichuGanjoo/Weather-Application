@@ -23,14 +23,21 @@
             
                 <section>
                 <form>
-                    <input type="text" id="entered-city-name" placeholder="Search location..." />
-            
-                    <button type="submit" class="btn btn-dark btn-sm" id="search-city">
-                    <i class="fas fa-search-plus"></i>
-                    </button>
-                    <button type="submit" class="btn btn-dark btn-sm" id="current-city-temp">
-                    Current City
-                    </button>
+                    <div class="row">
+                        <div class="col-7">
+                            <input type="text" id="entered-city-name" placeholder="Search location..." />
+                        </div>
+                        <div class="col-1">
+                        <button type="submit" class="btn btn-dark btn-sm" id="search-city">
+                        <i class="fas fa-search-plus"></i>
+                        </button>
+                        </div>
+                        <div class="col-1">
+                        <button type="submit" class="btn btn-dark btn-sm" id="current-city-temp">
+                        <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                        </div>
+                    </div>
                 </form>
                 </section>
                 
@@ -53,8 +60,8 @@
                     <img src="" alt="" id="icon" class="float-left" />
                     <strong id="current-temperature"></strong>       
                     <span class="units">
-                        <a href="#" id="celsius-link">°C</a>|
-                        <a href="#" id="fahrenheit-link">°F</a>
+                        <a href="#" id="celsius-link"></a>
+                        <a href="#" id="fahrenheit-link"></a>
                     </span>
                     </div>
                 </div>
@@ -73,51 +80,20 @@
                     </ul>
                 </div>
                 
-            <section>
-            <h4>Weather predictions for the next five days</h4>
-                <div class="row">
+            
+            <h4>Weather predictions for the next hours</h4>
+                <div class="row weather-forecast" id="forecast">
                     <div class="col-2">
-                        
-                        <i class="fas fa-cloud"></i>
-                        <br />
-                        Fri
-                        <br />
-                        23° 16°
+                        <h3></h3>
+                        <img src="" alt="">
+                        <div class="weather-forecast-temperature">
+                            <strong></strong>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        
-                        <i class="fas fa-wind"></i>
-                        <br />
-                        Sat
-                        <br />
-                        23° 16°
-                    </div>
-                    <div class="col-2">
-                        
-                        <i class="fas fa-sun"></i>
-                        <br />
-                        Sun
-                        <br />
-                        23° 16°
-                    </div>
-                    <div class="col-2">
-                        
-                        <i class="fas fa-cloud-sun-rain"></i>
-                        <br />
-                        Mon
-                        <br />
-                        23° 16°
-                    </div>
-                    <div class="col-2">
+                   
                     
-                        <i class="fas fa-cloud"></i>
-                        <br />
-                            Tue
-                        <br />
-                            23° 16°
-                    </div>
                 </div>
-            </section>
+            
             </div>
             </div>
         <small>
